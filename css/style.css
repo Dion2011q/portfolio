@@ -1,9 +1,9 @@
 :root {
-    --bg-color: #0A2647;
     --second-color: #144272;
     --third-color: #205295;
     --text-color: #FFFFFF;
     --link-color: #2C74B3;
+    --pfp-color: #456171;
 }
 
 html, body {
@@ -14,8 +14,9 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--bg-color);
+    background: linear-gradient(30deg,#0a2647 23%, #1163c8 79%);
     color: var(--text-color);
+    scroll-behavior: smooth;
 }
 
 main {
@@ -34,7 +35,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background-color: var(--second-color);
+    background-color: rgba(20, 66, 114, 0.8);
+    backdrop-filter: blur(4px); /* achtergrond blur header */
+    -webkit-backdrop-filter: blur(4px); /* voor safari blur */
     color: var(--text-color);
     border-radius: 999px;
     width: 95%;
@@ -45,6 +48,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 header a {
@@ -69,6 +73,10 @@ header a:hover {
     align-items: center;
     gap: 20px;
     min-width: 0;
+}
+
+.logo-container p {
+    color: lightgray;
 }
 
 .headerlinks {
@@ -121,7 +129,7 @@ main {
 }
 
 footer {
-    background-color: var(--second-color);
+    background-color: rgba(20, 66, 114, 0.9);
     color: var(--text-color);
     text-align: center;
     padding: 10px 20px;
@@ -135,5 +143,6 @@ footer {
     border-radius: 999px;
     margin: 24px auto;
     width: fit-content;  
-    min-width: 95%;    
+    min-width: 95%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);   
 }
