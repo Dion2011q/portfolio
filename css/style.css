@@ -1,16 +1,32 @@
+:root {
+    --bg-color: #0A2647;
+    --second-color: #144272;
+    --third-color: #205295;
+    --text-color: #FFFFFF;
+    --link-color: #2C74B3;
+}
+
 html, body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 main {
     flex: 1;
+    min-width: 95%;
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 128px; /* dat de main niet onder de header komt */
 }
 
 header {
@@ -18,28 +34,32 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background-color: #333;
-    color: white;
+    background-color: var(--second-color);
+    color: var(--text-color);
     border-radius: 999px;
     width: 95%;
     margin: 24px auto;
     min-width: 300px;
     box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header a {
     color: white;
     text-decoration: none;
     padding: 8px 24px;
-    background: #444;
+    background: var(--third-color);
     border-radius: 999px;
     transition: background 0.2s, color 0.2s;
     display: inline-block;
 }
 
 header a:hover {
-    background: #666;
-    color: #fff;
+    background: var(--link-color);
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -100,22 +120,9 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
-section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-section p {
-    line-height: 1.6;
-}
-
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--second-color);
+    color: var(--text-color);
     text-align: center;
     padding: 10px 20px;
     position: relative;
@@ -125,8 +132,8 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 999px; /* pill effect */
-    margin: 24px auto; /* center het footer blok */
-    width: fit-content;   /* alleen zo breed als de inhoud */
-    min-width: 95%;     /* optioneel, minimale breedte */   
+    border-radius: 999px;
+    margin: 24px auto;
+    width: fit-content;  
+    min-width: 95%;    
 }
