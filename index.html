@@ -15,18 +15,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <meta name="theme-color" content="#1163c8">
 </head>
 <body>
+    <div id="top-of-website"></div> <!-- for scroll to top of website. DON'T REMOVE -->
     <header>
-        <div class="logo-container">
+        <div class="logo-container fadein-stagger">
             <img src="img/pfp circle.png" alt="pfp circle" class="logo">
-            <h1>Dion Dogger</h1>
-            <p>aka Dion_2011q</p>
+            <h1 class="fadein-childfast">Dion Dogger</h1>
+            <p class="fadein-childslow">aka Dion_2011q</p>
         </div>
         <div class="headerlinks">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#top-of-website">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#tech-stack">Tech Stack</a></li>
                 </ul>
@@ -37,43 +40,53 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section id="hero">
             <div>
                 <div>
-                    <div id="hero-name">
-                    <h1>Hi, I'm Dion Dogger</h1>
-                    <h4>aka Dion_2011q</h4>
+                    <div id="hero-name" class="fadein-stagger">
+                        <h1 class="titleh1 fadein-childfast">Hi, I'm Dion Dogger</h1>
+                        <h4 class="fadein-childslow">aka Dion_2011q</h4>
                     </div>
-                    <p>a web developer with a passion for creating beautiful and functional websites.</p>
+                    <p>A web developer with a passion for creating beautiful and functional websites.</p>
                     <p>Feel free to explore my projects and get in touch!</p>
                     <a id="contact-link" href="https://discord.com/users/1092769673289945088" target="_blank">Contact me</a>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/Dion2011q" target="_blank"><img src="img/icons/github.png" alt="GitHub"></a>
-                    <a href="mailto:dion.p.dogger@protonmail.com" target="_blank"><img src="img/icons/gmail.png" alt="Gmail"></a>
-                    <a href="https://www.instagram.com/dion_2011q/" target="_blank"><img src="img/icons/instagram-round.png" alt="Instagram"></a>
-                    <a href="https://www.youtube.com/@Dion_2011q" target="_blank"><img src="img/icons/youtube.png" alt="YouTube"></a>
-                    <a href="https://discord.com/users/1092769673289945088" target="_blank"><img src="img/icons/discord.png" alt="Discord"></a>
+                <div class="social-links fadein-stagger">
+                    <a href="https://github.com/Dion2011q" target="_blank" class="fadein-childfast">
+                        <img src="img/icons/github.png" alt="GitHub">
+                    </a>
+                    <a href="mailto:dion.p.dogger@protonmail.com" target="_blank" class="fadein-childfast">
+                        <img src="img/icons/gmail.png" alt="Gmail">
+                    </a>
+                    <a href="https://www.instagram.com/dion_2011q/" target="_blank" class="fadein-childfast">
+                        <img src="img/icons/instagram-round.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/@Dion_2011q" target="_blank" class="fadein-childfast">
+                        <img src="img/icons/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="https://discord.com/users/1092769673289945088" target="_blank" class="fadein-childfast">
+                        <img src="img/icons/discord.png" alt="Discord">
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="img/pfp circle.png" alt="Profile Picture" id="pfp">
+            <div class="hero-image fadein-stagger">
+                <img src="img/pfp circle.png" alt="Profile Picture" id="pfp" class="fadein-childslow">
             </div>
         </section>
-        <section id="projects">
-            <h1>Latest Projects</h1>
+        <section id="projects" class="fadein-stagger">
+            <h1 class="fadein-childfast titleh1">Latest Projects</h1>
             <ul>
-                <li><img src="img/project1.png" alt="Project 1"><h3>Trimsalon AF!</h3><p>tekst project 1</p><a href="https://trimsalonaf.nl/" target="_blank">View Project</a></li>
-                <li><img src="img/project2.png" alt="Project 2"><h3>Project Dalen</h3><p>tekst project 2</p><a href="https://projectdalen.pages.dev/" target="_blank">View Project</a></li>
-                <li><img src="img/project3.png" alt="Project 3"><h3>DionWeb</h3><p>tekst project 3</p><a href="https://dionweb.pages.dev/" target="_blank">View Project</a></li>
+                <li class="fadein-childslow"><img src="img/projects/trimsalonaf.png" alt="Project 1" class="projectsimg"><h3 class="projectstitle">Trimsalon AF!</h3><p class="projectstext">tekst project 1</p><a href="https://trimsalonaf.nl/" target="_blank">View Project</a></li>
+                <li class="fadein-childslow"><img src="img/projects/dalen.png" alt="Project 2" class="projectsimg"><h3 class="projectstitle">Project Dalen</h3><p class="projectstext">tekst project 2</p><a href="https://projectdalen.pages.dev/" target="_blank">View Project</a></li>
+                <li class="fadein-childslow"><img src="img/projects/dionweb.png" alt="Project 3" class="projectsimg"><h3 class="projectstitle">DionWeb</h3><p class="projectstext">tekst project 3</p><a href="https://dionweb.pages.dev/" target="_blank">View Project</a></li>
             </ul>
         </section>
-        <section id="tech-stack">
-            <h1>Tech Stack</h1>
+        <section id="tech-stack" class="fadein-stagger">
+            <h1 class="fadein-childfast titleh1">Tech Stack</h1>
             <ul>
-                <li><a href="project1.html">HTML</a></li>
-                <li><a href="project2.html">CSS</a></li>
-                <li><a href="project3.html">JavaScript</a></li>
+                <li class="fadein-childslow"><a href="project1.html">HTML</a></li>
+                <li class="fadein-childslow"><a href="project2.html">CSS</a></li>
+                <li class="fadein-childslow"><a href="project3.html">JavaScript</a></li>
             </ul>
         </section>
     </main>

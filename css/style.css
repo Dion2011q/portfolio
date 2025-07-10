@@ -49,6 +49,7 @@ header {
     left: 0;
     right: 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999999999999999999999999999999;
 }
 
 header a {
@@ -145,4 +146,25 @@ footer {
     width: fit-content;  
     min-width: 95%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);   
+}
+
+
+/* fade in effect */
+.fadein-stagger .fadein-childfast {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadein-stagger 0.9s ease forwards;
+}
+
+.fadein-stagger .fadein-childslow {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadein-stagger 1.5s ease forwards;
+}
+
+@keyframes fadein-stagger {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
