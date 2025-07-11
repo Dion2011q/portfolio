@@ -92,9 +92,9 @@
     background: var(--second-color);
     padding: 10px;
     border-radius: 16px;
-    width: 350px;
+    width: 25vw;
     max-width: 90vw;
-    height: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,6 +164,14 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin: 0;
     padding: 0;
+}
+
+.tech-stackimg {
+    width: 50%;
+    height: auto;
+    border-radius: 36px;
+    margin: 0;
+    padding: 24px;
 }
 
 .projectstitle {
