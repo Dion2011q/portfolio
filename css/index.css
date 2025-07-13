@@ -3,13 +3,20 @@
     height: 50px;
 }
 
+.herocontact {
+    display: flex;
+    flex-direction: column;
+}
+
 #contact-link {
+    margin-top: 16px;
     color: white;
     text-decoration: none;
     padding: 8px 16px;
     font-weight: bold;
     background: var(--third-color);
     border-radius: 999px;
+    max-width: 90px;
     transition: background 0.2s, color 0.2s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -38,6 +45,10 @@
 
 #hero-name h4 {
     color: lightgray;
+}
+
+.hero-description {
+
 }
 
 @media (max-width: 768px) {
