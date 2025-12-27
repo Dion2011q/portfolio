@@ -35,7 +35,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background-color: rgba(20, 66, 114, 0.8);
+    background-color: rgba(20, 66, 114, 0.75);
     backdrop-filter: blur(4px); /* achtergrond blur header */
     -webkit-backdrop-filter: blur(4px); /* voor safari blur */
     color: var(--text-color);
@@ -130,7 +130,7 @@ main {
 }
 
 footer {
-    background-color: rgba(20, 66, 114, 0.9);
+    background-color: rgba(20, 66, 114, 0.75);
     color: var(--text-color);
     text-align: center;
     padding: 10px 20px;

@@ -8,7 +8,8 @@
     <!-- css & js -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/age.js" defer></script>
+    <script src="js/year.js" defer></script>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -16,7 +17,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
 
+    <!-- Meta Tag for ios bar -->
     <meta name="theme-color" content="#1163c8">
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Dion Dogger's personal portfolio website. A web developer showcasing projects and skills.">
+    <meta name="keywords" content="web developer, portfolio, Dion Dogger, Dion_2011q, projects, skills, HTML, CSS, JavaScript, web development, tech stack, contact, web design, responsive design, front-end">
+    <meta name="author" content="Dion Dogger">
+    <meta name="robots" content="index, follow">
+
+    <!-- Social media preview (Open Graph) -->
+    <meta property="og:title" content="Home | Dion Dogger">
+    <meta property="og:description" content="Dion Dogger's personal portfolio website. A web developer showcasing projects and skills.">
+    <meta property="og:image" content="diondogger.pages.dev/img/pfp circle.png">
+    <meta property="og:url" content="diondogger.pages.dev">
+    <meta property="og:type" content="website">
 </head>
 <body>
     <div id="top-of-website"></div> <!-- for scroll to top of website. DON'T REMOVE -->
@@ -37,7 +52,7 @@
             </nav>
         </div>
         <div class="headercontact">
-            <a id="contact-linkheader" href="https://discord.com/users/1092769673289945088" target="_blank">Contact me</a>
+            <a id="contact-linkheader" href="mailto:dion.p.dogger@protonmail.com" target="_blank">Contact me</a>
         </div>
     </header>
     <main>
@@ -53,25 +68,35 @@
                         <p class="fadein-childslow">Feel free to explore my projects and get in touch!</p>
                     </div>
                     <div class="herocontact">
-                    <a id="contact-link" href="https://discord.com/users/1092769673289945088" target="_blank">Contact me</a>
+                    <a id="contact-link" href="mailto:dion.p.dogger@protonmail.com" target="_blank">Contact me</a>
                     </div>
                 </div>
                 <div class="social-links fadein-stagger">
-                    <a href="https://github.com/Dion2011q" target="_blank" class="fadein-childfast">
-                        <img src="img/icons/github.png" alt="GitHub">
-                    </a>
-                    <a href="mailto:dion.p.dogger@protonmail.com" target="_blank" class="fadein-childfast">
-                        <img src="img/icons/gmail.png" alt="Gmail">
-                    </a>
-                    <a href="https://www.instagram.com/dion_2011q/" target="_blank" class="fadein-childfast">
-                        <img src="img/icons/instagram-round.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.youtube.com/@Dion_2011q" target="_blank" class="fadein-childfast">
-                        <img src="img/icons/youtube.png" alt="YouTube">
-                    </a>
-                    <a href="https://discord.com/users/1092769673289945088" target="_blank" class="fadein-childfast">
-                        <img src="img/icons/discord.png" alt="Discord">
-                    </a>
+                    <div class="sociallink">
+                        <a href="https://github.com/Dion2011q" target="_blank" class="fadein-childfast">
+                            <img src="img/icons/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                    <div class="sociallink">
+                        <a href="mailto:dion.p.dogger@protonmail.com" target="_blank" class="fadein-childfast">
+                            <img src="img/icons/gmail.png" alt="Gmail">
+                        </a>
+                    </div>
+                    <div class="sociallink">
+                        <a href="https://www.instagram.com/dion_2011q/" target="_blank" class="fadein-childfast">
+                            <img src="img/icons/instagram-round.png" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="sociallink">
+                        <a href="https://www.youtube.com/@Dion_2011q" target="_blank" class="fadein-childfast">
+                            <img src="img/icons/youtube.png" alt="YouTube">
+                        </a>
+                    </div>
+                    <div class="sociallink">
+                        <a href="https://discord.com/users/1092769673289945088" target="_blank" class="fadein-childfast">
+                            <img src="img/icons/discord.png" alt="Discord">
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="hero-image fadein-stagger">
@@ -104,36 +129,21 @@
                     <a href="https://dionweb.pages.dev/" target="_blank">View Project</a>
                 </li>
             </ul>
+            <a href="">See all my projects here</a>
         </section>
         <section id="tech-stack" class="fadein-stagger">
             <h1 class="fadein-childfast titleh1">Tech Stack</h1>
-            <ul>
-                <li class="fadein-childslow">
-                    <img src="img/icons/html.png" alt="HTML" class="tech-stackimg">
-                    <a>HTML</a>
-                </li>
-                <li class="fadein-childslow">
-                    <img src="img/icons/css.png" alt="CSS" class="tech-stackimg">
-                    <a>CSS</a>
-                </li>
-                <li class="fadein-childslow">
-                    <img src="img/icons/js.png" alt="JavaScript" class="tech-stackimg">
-                    <a>JavaScript</a>
-                </li>
-                <li class="fadein-childslow">
-                    <img src="img/icons/py.png" alt="Python" class="tech-stackimg">
-                    <a>Python</a>
-                </li>
-                <li class="fadein-childslow">
-                    <img src="img/icons/nodejs.svg" alt="Node.js" class="tech-stackimg">
-                    <a>Node.js</a>
-                </li>
-                <li class="fadein-childslow">
-                    <img src="img/icons/php.png" alt="PHP" class="tech-stackimg">
-                    <a>PHP</a>
-                </li>
+            <p class="fadein-childslow">Here are some of the technologies I work with:</p>
+            <ul class="tech-stack-list fadein-childslow">
+                <li><img src="/img/icons/html.png"></li>
+                <li><img src="/img/icons/css.png"></li>
+                <li><img src="/img/icons/js.png"></li>
+                <li><img src="/img/icons/nodejs.svg"></li>
+                <li><img src="/img/icons/github.png"></li>
+                <li><img src="/img/icons/git.png"></li>
+                <li><img src="/img/icons/linux.png"></li>
+                <li><img src="/img/icons/apple.png"></li>
             </ul>
-        </section>
     </main>
     <footer> 
         <p>&copy; <span id="year"></span> Dion Dogger. All rights reserved.</p>
