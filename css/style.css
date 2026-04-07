@@ -50,7 +50,7 @@ header {
     left: 0;
     right: 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    z-index: 9999999999999999999999999999999;
+    z-index: 999999;
 }
 
 header a {
@@ -103,6 +103,7 @@ header a:hover {
     justify-content: flex-end;
     align-items: center;
     min-width: 0;
+    gap: 8px;
 }
 
 header h1 {
@@ -190,6 +191,31 @@ footer {
     background: var(--link-color);
     color: var(--text-color);
     text-decoration: underline;
+}
+
+.pill-button {
+    background-color: var(--third-color);
+    color: var(--text-color-white);
+    border: none;
+    padding: 9px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1); /* standaardgrootte */
+}
+
+.pill-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.1); /* iets groter bij hover */
+}
+
+.pill-button:active {
+    transform: scale(0.95); /* iets kleiner bij klikken */
 }
 
 .titleh1 {
